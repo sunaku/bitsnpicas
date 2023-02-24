@@ -242,8 +242,8 @@ public class TTFBitmapFontExporter implements BitmapFontExporter {
 		headTable.setFontRevisionDouble(fontVersion);
 		headTable.flags = HeadTable.FLAGS_Y_VALUE_OF_ZERO_SPECIFIES_BASELINE | HeadTable.FLAGS_MINIMUM_X_VALUE_IS_LEFT_SIDE_BEARING;
 		headTable.unitsPerEm = (bf.getEmAscent() + bf.getEmDescent()) * ysize;
-		headTable.setDateCreatedCalendar(now);
-		headTable.setDateModifiedCalendar(now);
+		// headTable.setDateCreatedCalendar(now);
+		// headTable.setDateModifiedCalendar(now);
 		headTable.xMin = a.bbx1;
 		headTable.yMin = a.bby1;
 		headTable.xMax = a.bbx2;
